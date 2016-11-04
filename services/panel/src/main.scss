@@ -1,0 +1,7 @@
+@import './components/atoms/button.scss';
+
+main {
+    button {
+        @include button;
+    }
+}

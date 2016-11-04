@@ -1,30 +1,4 @@
-@mixin user-select($value) {
-  -webkit-touch-callout: $value;
-  -webkit-user-select: $value;
-  -khtml-user-select: $value;
-  -moz-user-select: $value;
-  -ms-user-select: $value;
-  user-select: $value;
-}
-
-@mixin tab-focus() {
-  // WebKit-specific. Other browsers will keep their default outline style.
-  // (Initially tried to also force default via `outline: initial`,
-  // but that seems to erroneously remove the outline in Firefox altogether.)
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-@mixin box-shadow($shadow...) {
-  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
-          box-shadow: $shadow;
-}
-
-@mixin opacity ($opacity: 0.5) {
-	-webkit-opacity: 	$opacity;
-	-moz-opacity: 		$opacity;
-	opacity: 		$opacity;
-}
+@import '../../helpers/browser-support.scss';
 
 @mixin button-variant($color, $background, $border) {
   color: $color;
@@ -79,7 +53,7 @@
   }
 }
 
-@mixin button() {
+@mixin button($options: ()) {
     $defaults: (
         padding-vertical: 6px,
         padding-horizontal: 12px,
@@ -92,6 +66,8 @@
         border: #ccc
     );
 
+    $settings: map-merge($defaults, $options);
+
     display: inline-block;
     margin-bottom: 0;
     font-weight: center;
@@ -101,10 +77,10 @@
     background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
-    padding: map-get($defaults, padding-vertical) map-get($defaults, padding-horizontal);
-    font-size: map-get($defaults, font-size);
-    line-height: map-get($defaults, line-height);
-    border-radius: map-get($defaults, border-radius);
+    padding: map-get($settings, padding-vertical) map-get($settings, padding-horizontal);
+    font-size: map-get($settings, font-size);
+    line-height: map-get($settings, line-height);
+    border-radius: map-get($settings, border-radius);
     @include user-select(none);
 
     &,
@@ -119,7 +95,7 @@
     &:hover,
     &:focus,
     &.focus {
-        color: map-get($defaults, color);
+        color: map-get($settings, color);
         text-decoration: none;
     }
 
@@ -133,14 +109,14 @@
     &.disabled,
     &[disabled],
     fieldset[disabled] & {
-        cursor: map-get($defaults, disabled-cursor);
+        cursor: map-get($settings, disabled-cursor);
         @include opacity(.65);
         @include box-shadow(none);
     }
 
     @include button-variant(
-        map-get($defaults, color),
-        map-get($defaults, background),
-        map-get($defaults, border)
+        map-get($settings, color),
+        map-get($settings, background),
+        map-get($settings, border)
     );
 }

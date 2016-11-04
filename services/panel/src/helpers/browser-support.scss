@@ -1,0 +1,24 @@
+@mixin user-select($value) {
+  -webkit-touch-callout: $value;
+    -webkit-user-select: $value;
+     -khtml-user-select: $value;
+       -moz-user-select: $value;
+        -ms-user-select: $value;
+            user-select: $value;
+}
+
+@mixin tab-focus() {
+  outline:        5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+          box-shadow: $shadow;
+}
+
+@mixin opacity($opacity: 0.5) {
+	-webkit-opacity: $opacity;
+	   -moz-opacity: $opacity;
+	        opacity: $opacity;
+}

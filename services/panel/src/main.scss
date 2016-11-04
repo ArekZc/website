@@ -2,6 +2,11 @@
 
 main {
     button {
-        @include button;
+        @include button((
+            border-radius: 3px,
+            color: #fff,
+            background: #aeb6cb,
+            border: #aeb6cb
+        ));
     }
 }

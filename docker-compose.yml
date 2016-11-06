@@ -1,0 +1,3 @@
+panel:
+    build: ./services/panel
+    dockerfile: Dockerfile

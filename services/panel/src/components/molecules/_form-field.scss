@@ -1,0 +1,27 @@
+@import '../atoms/label.scss';
+@import '../atoms/form-control.scss';
+
+@mixin form-field-molecule($options: ()) {
+    $defaults: (
+        label: (),
+        form-control: ()
+    );
+
+    $settings: map-merge($defaults, $options);
+
+    & > label {
+        @include label-atom(map-get($settings, label));
+
+        &.error-message {
+            color: red;
+        }
+    }
+
+    & > input, & > textarea {
+        @include form-control-atom(map-get($settings, form-control));
+    }
+
+    & > textarea {
+        height: auto;
+    }
+}

@@ -6,8 +6,8 @@
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "sass": "node-sass src/main.scss src/main.css",
-    "sass:w": "node-sass -w src/main.scss src/main.css"
+    "sass": "node-sass src -o src",
+    "sass:w": "node-sass -w src -o src"
   },
   "licenses": [
     {

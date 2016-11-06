@@ -1,12 +1,9 @@
-@import './components/atoms/button.scss';
+@import './components/organisms/basic-form.scss';
 
 main {
-    button {
-        @include button((
-            border-radius: 3px,
-            color: #fff,
-            background: #aeb6cb,
-            border: #aeb6cb
-        ));
+    form {
+        margin: 20px 0;
+        @include basic-form-organism;
     }
 }
+

@@ -1,0 +1,15 @@
+@import '../../helpers/browser-support.scss';
+
+@mixin form-atom($options: ()) {
+    $defaults: (
+        background-color: #fff
+    );
+
+    $settings: map-merge($defaults, $options);
+
+
+    background-color: map-get($settings, background-color);
+    @include box-shadow(0 1px 1px rgba(0,0,0,.05));
+
+    @content;
+}

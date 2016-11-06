@@ -53,7 +53,7 @@
   }
 }
 
-@mixin button($options: ()) {
+@mixin button-atom($options: ()) {
     $defaults: (
         padding-vertical: 6px,
         padding-horizontal: 12px,

@@ -4,10 +4,13 @@
   "scripts": {
     "start": "concurrently \"tsc\" \"npm run sass\" && concurrently \"tsc -w\" \"lite-server\" \"npm run sass:w\"",
     "lite": "lite-server",
-    "tsc": "tsc",
+    "tsc": "tsc --outDir dist",
     "tsc:w": "tsc -w",
     "sass": "node-sass src -o src",
-    "sass:w": "node-sass -w src -o src"
+    "sass:w": "node-sass -w src -o src",
+    "test": "karma start karma.conf.js",
+    "posttest": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html",
+    "coverage": "http-server -c-1 -o -p 9875 ./coverage"
   },
   "licenses": [
     {
@@ -36,9 +39,18 @@
   "devDependencies": {
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
+    "codelyzer": "^1.0.0-beta.3",
     "concurrently": "^3.0.0",
+    "http-server": "^0.9.0",
+    "jasmine-spec-reporter": "^2.7.0",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
     "lite-server": "^2.2.2",
     "node-sass": "^3.11.1",
-    "typescript": "^2.0.3"
+    "remap-istanbul": "^0.7.0",
+    "typescript": "^2.0.3",
+    "typings": "^2.0.0"
   }
 }

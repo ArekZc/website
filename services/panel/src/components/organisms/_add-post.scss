@@ -1,0 +1,30 @@
+@import '../atoms/form.scss';
+@import '../atoms/button.scss';
+@import '../molecules/form-field.scss';
+@import '../atoms/legend.scss';
+@import '../atoms/fieldset.scss';
+
+@mixin add-post-organism() {
+    & > form {
+        @include form-atom {
+            & > legend {
+                @include legend-atom;
+            }
+
+            & > fieldset {
+                @include fieldset-atom;
+
+                & > .form-field {
+                    @include form-field-molecule;
+
+                    margin-bottom: 15px;
+                }
+
+                & > button[type="submit"] {
+                    @include button-atom;
+                }
+            }
+        }
+    }
+
+}

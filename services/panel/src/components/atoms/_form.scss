@@ -1,4 +1,4 @@
-@import '../../helpers/browser-support.scss';
+@import '../../common/programatic-ui/core/browser-support.scss';
 
 @mixin form-atom($options: ()) {
     $defaults: (

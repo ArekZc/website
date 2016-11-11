@@ -1,0 +1,144 @@
+main #add-post-organism {
+  margin: 20px 0; }
+  main #add-post-organism > form {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+    main #add-post-organism > form > legend {
+      border-color: #ebeff6;
+      background-color: #fff;
+      border-radius: 2px 2px 0 0;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ebeff6;
+      font-weight: 700;
+      width: 100%; }
+    main #add-post-organism > form > fieldset {
+      padding: 15px;
+      border: none;
+      margin: 0; }
+      main #add-post-organism > form > fieldset > .form-field {
+        margin-bottom: 15px; }
+        main #add-post-organism > form > fieldset > .form-field > label {
+          font-weight: 600;
+          display: inline-block;
+          max-width: 100%;
+          margin-bottom: 5px; }
+          main #add-post-organism > form > fieldset > .form-field > label.error-message {
+            color: red; }
+        main #add-post-organism > form > fieldset > .form-field > input, main #add-post-organism > form > fieldset > .form-field > textarea {
+          display: block;
+          width: 100%;
+          height: 34px;
+          padding: 6px 12px;
+          font-size: 14px;
+          line-height: 1.42857;
+          color: #333;
+          background-color: transparent;
+          background-image: none;
+          border: 1px solid #d8dde5;
+          border-radius: 4px;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+          main #add-post-organism > form > fieldset > .form-field > input:focus, main #add-post-organism > form > fieldset > .form-field > textarea:focus {
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+          main #add-post-organism > form > fieldset > .form-field > input::-moz-placeholder, main #add-post-organism > form > fieldset > .form-field > textarea::-moz-placeholder {
+            color: #999;
+            opacity: 1; }
+          main #add-post-organism > form > fieldset > .form-field > input:-ms-input-placeholder, main #add-post-organism > form > fieldset > .form-field > textarea:-ms-input-placeholder {
+            color: #999; }
+          main #add-post-organism > form > fieldset > .form-field > input::-webkit-input-placeholder, main #add-post-organism > form > fieldset > .form-field > textarea::-webkit-input-placeholder {
+            color: #999; }
+          main #add-post-organism > form > fieldset > .form-field > input::-ms-expand, main #add-post-organism > form > fieldset > .form-field > textarea::-ms-expand {
+            border: 0;
+            background-color: transparent; }
+          main #add-post-organism > form > fieldset > .form-field > input[disabled], main #add-post-organism > form > fieldset > .form-field > input[readonly],
+          fieldset[disabled] main #add-post-organism > form > fieldset > .form-field > input, main #add-post-organism > form > fieldset > .form-field > textarea[disabled], main #add-post-organism > form > fieldset > .form-field > textarea[readonly],
+          fieldset[disabled] main #add-post-organism > form > fieldset > .form-field > textarea {
+            background-color: #eee;
+            opacity: 1; }
+          main #add-post-organism > form > fieldset > .form-field > input[disabled],
+          fieldset[disabled] main #add-post-organism > form > fieldset > .form-field > input, main #add-post-organism > form > fieldset > .form-field > textarea[disabled],
+          fieldset[disabled] main #add-post-organism > form > fieldset > .form-field > textarea {
+            cursor: not-allowed; }
+        main #add-post-organism > form > fieldset > .form-field > textarea {
+          height: auto; }
+      main #add-post-organism > form > fieldset > button[type="submit"] {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857;
+        border-radius: 4px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc; }
+        main #add-post-organism > form > fieldset > button[type="submit"]:focus, main #add-post-organism > form > fieldset > button[type="submit"].focus, main #add-post-organism > form > fieldset > button[type="submit"]:active:focus, main #add-post-organism > form > fieldset > button[type="submit"]:active.focus, main #add-post-organism > form > fieldset > button[type="submit"].active:focus, main #add-post-organism > form > fieldset > button[type="submit"].active.focus {
+          outline: 5px auto -webkit-focus-ring-color;
+          outline-offset: -2px; }
+        main #add-post-organism > form > fieldset > button[type="submit"]:hover, main #add-post-organism > form > fieldset > button[type="submit"]:focus, main #add-post-organism > form > fieldset > button[type="submit"].focus {
+          color: #333;
+          text-decoration: none; }
+        main #add-post-organism > form > fieldset > button[type="submit"]:active, main #add-post-organism > form > fieldset > button[type="submit"].active {
+          outline: 0;
+          background-image: none;
+          -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+        main #add-post-organism > form > fieldset > button[type="submit"].disabled, main #add-post-organism > form > fieldset > button[type="submit"][disabled],
+        fieldset[disabled] main #add-post-organism > form > fieldset > button[type="submit"] {
+          cursor: not-allowed;
+          -webkit-opacity: 0.65;
+          -moz-opacity: 0.65;
+          opacity: 0.65;
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+        main #add-post-organism > form > fieldset > button[type="submit"]:focus, main #add-post-organism > form > fieldset > button[type="submit"].focus {
+          color: #333;
+          background-color: #e6e6e6;
+          border-color: #8c8c8c; }
+        main #add-post-organism > form > fieldset > button[type="submit"]:hover {
+          color: #333;
+          background-color: #e6e6e6;
+          border-color: #adadad; }
+        main #add-post-organism > form > fieldset > button[type="submit"]:active, main #add-post-organism > form > fieldset > button[type="submit"].active,
+        .open > main #add-post-organism > form > fieldset > button[type="submit"].dropdown-toggle {
+          color: #333;
+          background-color: #e6e6e6;
+          border-color: #adadad; }
+          main #add-post-organism > form > fieldset > button[type="submit"]:active:hover, main #add-post-organism > form > fieldset > button[type="submit"]:active:focus, main #add-post-organism > form > fieldset > button[type="submit"]:active.focus, main #add-post-organism > form > fieldset > button[type="submit"].active:hover, main #add-post-organism > form > fieldset > button[type="submit"].active:focus, main #add-post-organism > form > fieldset > button[type="submit"].active.focus,
+          .open > main #add-post-organism > form > fieldset > button[type="submit"].dropdown-toggle:hover,
+          .open > main #add-post-organism > form > fieldset > button[type="submit"].dropdown-toggle:focus,
+          .open > main #add-post-organism > form > fieldset > button[type="submit"].dropdown-toggle.focus {
+            color: #333;
+            background-color: #d4d4d4;
+            border-color: #8c8c8c; }
+        main #add-post-organism > form > fieldset > button[type="submit"]:active, main #add-post-organism > form > fieldset > button[type="submit"].active,
+        .open > main #add-post-organism > form > fieldset > button[type="submit"].dropdown-toggle {
+          background-image: none; }
+        main #add-post-organism > form > fieldset > button[type="submit"].disabled:hover, main #add-post-organism > form > fieldset > button[type="submit"].disabled:focus, main #add-post-organism > form > fieldset > button[type="submit"].disabled.focus, main #add-post-organism > form > fieldset > button[type="submit"][disabled]:hover, main #add-post-organism > form > fieldset > button[type="submit"][disabled]:focus, main #add-post-organism > form > fieldset > button[type="submit"][disabled].focus,
+        fieldset[disabled] main #add-post-organism > form > fieldset > button[type="submit"]:hover,
+        fieldset[disabled] main #add-post-organism > form > fieldset > button[type="submit"]:focus,
+        fieldset[disabled] main #add-post-organism > form > fieldset > button[type="submit"].focus {
+          background-color: #fff;
+          border-color: #ccc; }
+        main #add-post-organism > form > fieldset > button[type="submit"] .badge {
+          color: #fff;
+          background-color: #333; }

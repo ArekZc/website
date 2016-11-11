@@ -1,9 +1,9 @@
-@import './components/organisms/basic-form.scss';
+@import './components/organisms/add-post.scss';
 
 main {
-    form {
+    #add-post-organism {
         margin: 20px 0;
-        @include basic-form-organism;
+        @include add-post-organism;
     }
 }
 

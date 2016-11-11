@@ -4,7 +4,7 @@ import {Component} from '@angular/core';
   selector: 'panel',
   template: `<main class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div id="add-post-organism" class="col-lg-6">
                         <form>
                             <legend>Create post</legend>
                             <fieldset>

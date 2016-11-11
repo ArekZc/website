@@ -1,4 +1,4 @@
-@import '../../helpers/browser-support.scss';
+@import '../../common/programatic-ui/core/browser-support.scss';
 
 @mixin button-variant($color, $background, $border) {
   color: $color;

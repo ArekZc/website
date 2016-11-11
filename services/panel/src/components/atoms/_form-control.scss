@@ -1,4 +1,4 @@
-@import '../../helpers/browser-support.scss';
+@import '../../common/programatic-ui/core/browser-support.scss';
 
 @mixin form-control-focus-modyficator($color: #66afe9) {
   $color-rgba: rgba(red($color), green($color), blue($color), .6);

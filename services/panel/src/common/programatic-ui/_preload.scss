@@ -1,0 +1,14 @@
+$body-bg: #ebeff6;
+$text-color: #717171;
+$font-size-base: 13px;
+$font-family-sans-serif: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+
+// Reset and dependencies
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print';
+
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid';
